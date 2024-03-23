@@ -4,7 +4,7 @@ import json
 import os
 from openpyxl import Workbook
 
-url72m="    " #insérer ici l'adresse de l'analyseur
+url72m="    " #insérer ici l'ip de l'analyseur
 
 urlchroma= url72m+"/cgi-bin/cgi_get_chroma_res"
 
