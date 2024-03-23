@@ -79,14 +79,8 @@ def extraction(sheet):
      sheet.cell(row=i+1, column=14, value=base_b)
 
      base_t = Jsonchroma["comp"]["C{}".format(i)]["base_t"]
-     sheet.cell(row=i+1, column=15, value=base_t)
-  
-     
+     sheet.cell(row=i+1, column=15, value=base_t)   
     return start 
-
- 
-
-
 
 n = int(input("Entrez le nombre de chromatographes que vous souhaitez importer :"))
 wb = Workbook()
@@ -104,8 +98,6 @@ for i in range(1, n + 1):
     sheet = wb.active
     start = extraction(sheet) # heure de départ
     sheet.title = "Chromato 1 "
-    
-
   else : 
     sheet = wb.create_sheet(title="Chromato " + str(i))
     start = extraction(sheet) # heure de départ
